@@ -319,7 +319,7 @@ def main_worker(gpu, ngpus_per_node, args):
                 'best_acc1': best_acc1,
                 'optimizer' : optimizer.state_dict(),
                 'scheduler' : scheduler.state_dict()
-            }, is_best)
+            }, is_best, model_name=args.arch)
 
 grad_clip_norm = 1.0
 def train(train_loader, model, criterion, optimizer, epoch, device, args):
@@ -430,10 +430,12 @@ def validate(val_loader, model, criterion, args):
     return top1.avg
 
 
-def save_checkpoint(state, is_best, filename='checkpoint.pth.tar'):
-    torch.save(state, filename)
+def save_checkpoint(state, is_best, model_name,filename='checkpoint_{model_name}.pth.tar'):  #加进了model_name和epoch
+    checkpoint_path = filename.format(model_name=model_name)
+    torch.save(state, checkpoint_path)
     if is_best:
-        shutil.copyfile(filename, 'model_best.pth.tar')
+        best_path = 'model_best_{}.pth.tar'.format(model_name)
+        shutil.copyfile(checkpoint_path,best_path)
 
 class Summary(Enum):
     NONE = 0

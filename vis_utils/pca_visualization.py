@@ -17,7 +17,7 @@ from scipy import ndimage
 
 @torch.no_grad()
 def pca(image_paths, load_size: int = 224, layer: int = 11, facet: str = 'key', bin: bool = False, stride: int = 4,
-        model_type: str = 'dino_vits8', model: nn.Module = None, n_components: int = 4,
+        model_type: str = 'CRATE_base', model: nn.Module = None, n_components: int = 4,
         all_together: bool = True, masks = None) -> List[Tuple[Image.Image, numpy.ndarray]]:
     """
     finding pca of a set of images.
@@ -190,3 +190,4 @@ def str2bool(v):
         return False
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
+

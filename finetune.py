@@ -27,8 +27,8 @@ parser.add_argument('--lr', default=1e-4, type=float, help='learning rate') # re
 parser.add_argument('--opt', default="adamW")
 parser.add_argument('--net', default='vit')
 parser.add_argument('--bs', type=int, default=50)
-parser.add_argument('--data', default="cifar10")
-parser.add_argument('--classes',type=int, default=10)
+parser.add_argument('--data', default="cifar10")   
+parser.add_argument('--classes',type=int, default=10)    #if changing dataset, this need to be adjusted
 parser.add_argument('--resume',type=int, default=0)
 parser.add_argument('--randomaug',type=int, default=1)
 parser.add_argument('--rand_aug_n',type=int, default=2)
@@ -99,7 +99,7 @@ if 'cuda' in device:
         #upd keys
         state_dict = torch.load(args.ckpt_dir)['state_dict']
         for key in list(state_dict.keys()):
-            if 'mlp_head' in key:
+            if 'mlp_head' in key or 'head' in key:       #这里加了个del head
                 del state_dict[key]
                 print("deleted:", key)
         net.load_state_dict(state_dict, strict=False)
