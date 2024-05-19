@@ -51,11 +51,6 @@ The Colab Jupyter notebook visualize the emerged segmentations from a supervised
 
 Link: [crate-emergence.ipynb](https://colab.research.google.com/drive/1rYn_NlepyW7Fu5LDliyBDmFZylHco7ss?usp=sharing) (in colab)
 
-<p align="center">
-    <img src="figs/fig_seg_headwise.png" width="900"\>
-</p>
-<p align="center">
-
 
 
 
