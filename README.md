@@ -42,7 +42,7 @@ python finetune.py
   --ckpt_dir CKPT_DIR 
   --data_dir DATA_DIR
 ```
-Replace `CKPT_DIR` with the path for the pretrained CRATE weight, and replace `DATA_DIR` with the path for the dataset. The `CKPT_DIR` could be `None`, it will automatically read the data folder to check if it is there. 
+Replace `CKPT_DIR` with the path for the pretrained CRATE weight, and replace `DATA_DIR` with the path for the dataset. The `CKPT_DIR` could be `None`, the system will automatically check the data folder to verify its presence, and if absent, it will proceed to download it. 
 
 ## Demo: Emergent segmentation in CRATE
 
