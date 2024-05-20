@@ -49,7 +49,8 @@ Replace `CKPT_DIR` with the path for the pretrained CRATE weight, and replace `D
 CRATE models exhibit emergent segmentation in their self-attention maps solely through supervised training.
 The Colab Jupyter notebook visualize the emerged segmentations from a supervised **CRATE** model. The demo provides visualizations which match the segmentation figures above.
 
-Link: [crate-emergence.ipynb]([https://colab.research.google.com/drive/1rYn_NlepyW7Fu5LDliyBDmFZylHco7ss?usp=sharing](https://colab.research.google.com/drive/1sOv-VGFRGVo82rLq9QrmFodTP9E2Y5Nu?usp=sharing]) (in colab)
+Link: [crate-emergence.ipynb](https://colab.research.google.com/drive/1sOv-VGFRGVo82rLq9QrmFodTP9E2Y5Nu?usp=sharing) (in colab)
+
 
 
 
