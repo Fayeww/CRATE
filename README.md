@@ -1,4 +1,4 @@
-# CRATE (Coding RAte reduction TransformEr)
+# Re.CRATE (Coding RAte reduction TransformEr)
 This repository provides a reproducibility implementation of the paper in PyTorch.
 
 - **White-Box Transformers via Sparse Rate Reduction** [**NeurIPS-2023**, [paper link](https://openreview.net/forum?id=THfl8hdVxH#)]. By [Yaodong Yu](https://yaodongyu.github.io) (UC Berkeley), [Sam Buchanan](https://sdbuchanan.com) (TTIC), [Druv Pai](https://druvpai.github.io) (UC Berkeley), [Tianzhe Chu](https://tianzhechu.com/) (UC Berkeley), [Ziyang Wu](https://robinwu218.github.io/) (UC Berkeley), [Shengbang Tong](https://tsb0601.github.io/petertongsb/) (UC Berkeley), [Benjamin D Haeffele](https://www.cis.jhu.edu/~haeffele/#about) (Johns Hopkins University), and [Yi Ma](http://people.eecs.berkeley.edu/~yima/) (UC Berkeley). 
@@ -49,7 +49,7 @@ Replace `CKPT_DIR` with the path for the pretrained CRATE weight, and replace `D
 CRATE models exhibit emergent segmentation in their self-attention maps solely through supervised training.
 The Colab Jupyter notebook visualize the emerged segmentations from a supervised **CRATE** model. The demo provides visualizations which match the segmentation figures above.
 
-Link: [crate-emergence.ipynb](https://colab.research.google.com/drive/1rYn_NlepyW7Fu5LDliyBDmFZylHco7ss?usp=sharing) (in colab)
+Link: [crate-emergence.ipynb]([https://colab.research.google.com/drive/1rYn_NlepyW7Fu5LDliyBDmFZylHco7ss?usp=sharing](https://colab.research.google.com/drive/1sOv-VGFRGVo82rLq9QrmFodTP9E2Y5Nu?usp=sharing)) (in colab)
 
 
 
