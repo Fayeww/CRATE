@@ -10,7 +10,7 @@ kaggle datasets download -d ambityga/imagenet100
 ```
 The included file folds need to be merged into train and val folders.
 
-## Training CRATE on ImageNet
+## Training
 To train a CRATE model on ImageNet-1K, run the following script (training CRATE-tiny)
 
 As an example, we use the following command for training CRATE-tiny on ImageNet-100:
@@ -28,7 +28,7 @@ python main.py
 and replace `DATA_DIR` with `[imagenet-folder with train and val folders]`.
 
 
-## Finetuning pretrained / training random initialized CRATE on CIFAR10
+## Finetuning
 
 ```python
 python finetune.py 
